@@ -62,7 +62,7 @@ import sqlite3
 conn = sqlite3.connect('trackdb.sqlite')
 cur = conn.cursor()
 
-# Make some fresh tables using executescript()
+# Make fresh tables using executescript()
 cur.executescript('''
 DROP TABLE IF EXISTS Artist;
 DROP TABLE IF EXISTS Genre;
